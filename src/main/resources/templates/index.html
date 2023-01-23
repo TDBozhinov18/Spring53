@@ -2,12 +2,21 @@
 <html>
 <head>
     <title>Page Links</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
+<h1>Pages:</h1>
 <ul>
-    <li><a href="/numbers?n=20">Numbers</a></li>
-    <li><a href="/sum-numbers?n=10">Sum-numbers</a></li>
-    <li><a href="/words?word=Hello&n=5">Words</a></li>
+    <form action="/goToNumbersPage">
+        <button>Numbers</button>
+    </form>
+    <form action="/goToSumNumbersPage">
+        <button class="button">Sum-Numbers</button>
+    </form>
+    <form action="/goToWordsPage">
+        <button class="button">Words</button>
+    </form>
 </ul>
 </body>
 </html>
