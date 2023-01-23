@@ -15,7 +15,7 @@ public class PageController {
     @GetMapping("/goToSumNumbersPage")
     public String goToSumNumbersPage(Model model, @RequestParam(value = "n", defaultValue = "10") int n) {
         model.addAttribute("numbers", NumbersService.sum(n));
-        return "SumNumbers";
+        return "numbers";
     }
 
     @GetMapping("/goToWordsPage")
